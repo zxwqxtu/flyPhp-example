@@ -29,18 +29,21 @@ class Common
     /**
      * 获取config文件值
      *
-     * @param string $key  key
-     * @param string $item item 
+     * @param string $key    key
+     * @param string $item   item 
      *
      * @return string|int|array|null
      */
     public static function getConfig($key=null, $item=null)
     {
-        if (empty(self::$_config)) {
-            self::$_config = include ROOT_PATH.DIRECTORY_SEPARATOR.'data/config.php';
+        if (!defined('APP_PATH')) {
+            $config = self::getConfigAll();
+        } elseif (empty(self::$_config)) {
+            $config = self::$_config = self::getConfigAll();
+        } else {
+            $config = self::$_config;
         }
 
-        $config = self::$_config;
         if (empty($key)) {
             return $config;
         }
@@ -49,5 +52,31 @@ class Common
         }
 
         return isset($config[$key][$item])? $config[$key][$item]: null;
+    }
+
+    /**
+     * 设置config属性
+     *
+     * @return array
+     */
+    public static function getConfigAll()
+    {
+        $files = array(
+            SYSTEM_PATH.DIRECTORY_SEPARATOR.'config.php',
+            ROOT_PATH.DIRECTORY_SEPARATOR.'app/config.php',
+        );
+        if (defined('APP_PATH')) {
+            $files[] = APP_PATH.DIRECTORY_SEPARATOR.'config.php';
+        }
+
+        $config = array();
+        foreach ($files as $v) {
+            if (!file_exists($v)) {
+                continue;
+            }
+            $config = array_merge($config, include $v);
+        }
+
+        return $config;
     }
 }

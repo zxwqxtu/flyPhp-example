@@ -13,6 +13,7 @@
 namespace Boot;
 
 use Libs\Single;
+use Libs\Common;
 
 /**
  * Boot\Route
@@ -43,16 +44,35 @@ class Route extends Single
     private $_params = array();
 
     /**
+     * @var string appName
+     */
+    private $_appName= '';
+
+    /**
      * 初始化运行
      */
     protected function init()
     {
         //命令行运行
         if (php_sapi_name() == 'cli') {
-            $this->_route = $_SERVER['argv'];
+            if (empty($_SERVER['argv'][1])) {
+                throw new \Exception('UNDEFINED-APPNAME');
+            }
+
+            $this->_appName = $_SERVER['argv'][1];
+
+            $tmp = $_SERVER['argv'];
+            unset($tmp[1]);
+            $this->_route = array_values($tmp);
+            //绝对路径换成index.php
+            $this->_route[0] = 'index.php';
+
         } else {
+            $this->_appName = Common::getConfig('app', $_SERVER['HTTP_HOST']);
+
             $this->_route = explode('/', $_SERVER['PHP_SELF']);
         }
+
         $this->urlToClass();
     }
 
@@ -131,5 +151,15 @@ class Route extends Single
     public function getParams()
     {
         return $this->_params;
+    }
+
+    /**
+     * 获取app名
+     *
+     * @return string
+     */
+    public function getAppName()
+    {
+        return $this->_appName;
     }
 }

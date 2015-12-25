@@ -5,7 +5,7 @@
  */
 return array(
     'app' => array(
-        'blog' => 'blog.baidu.com',
+        'blog.com' => 'blog',
     ),
     'timezone' => 'Asia/Shanghai',
     'debug' => true,
@@ -15,9 +15,10 @@ return array(
     'importClassPath' => array(
         'controllers',
         'models',
-        'libs'
+        'libs',
+        'boot'
     ),
     'require' => array(
-        'vendor/autoload.php'
+    #   'vendor/autoload.php'
     )
 );

@@ -44,8 +44,11 @@ class Init extends Single
         if (!empty(Common::getConfig('errorLog'))) {
             $errorLog = Common::getConfig('errorLog');
         } else {
-            $errorLog = ROOT_PATH . '/logs/error.log'; 
+            $errorLog = ROOT_PATH . "/logs/".$this->_route->getAppName(); 
+            !is_dir($errorLog) && mkdir($errorLog, 0777, true);
+            $errorLog .= "/error.log";
         }
+
         return ini_set('error_log', $errorLog);
     }
 
@@ -57,6 +60,10 @@ class Init extends Single
      */    
     protected function init()
     {
+        $this->_route = Route::getInstance();
+
+        //定义APP_PATH常量
+        define('APP_PATH', ROOT_PATH.'/app/'.$this->_route->getAppName());
         define('DEBUG', Common::getConfig('debug'));
 
         //log日志
@@ -64,13 +71,11 @@ class Init extends Single
         //时区
         date_default_timezone_set(Common::getConfig('timezone'));
         
-        $this->_route = Route::getInstance();
-
         //加载必要的文件
         $requireFiles = Common::getConfig('require'); 
         if (!empty($requireFiles)) {
             foreach ($requireFiles as $v) {
-                require_once ROOT_PATH.DIRECTORY_SEPARATOR.$v;
+                require_once APP_PATH.DIRECTORY_SEPARATOR.$v;
             }
         }
     }
