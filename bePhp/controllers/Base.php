@@ -127,15 +127,19 @@ abstract class Base
             exit; 
         }
 
-        $fileName = ROOT_PATH.DIRECTORY_SEPARATOR.'views'; 
+        $fileName = APP_PATH.DIRECTORY_SEPARATOR.'views'; 
         if (empty($this->view)) {
-            $_str = str_replace("\\", DIRECTORY_SEPARATOR, get_class($this)); 
+            $fileName .= str_replace(
+                array("\\", 'Controllers'), 
+                array(DIRECTORY_SEPARATOR, ''), 
+                get_class($this)
+            ); 
             $fileName .= DIRECTORY_SEPARATOR.$action.$this->viewSuffix;
         } else {
             $fileName .= DIRECTORY_SEPARATOR.$this->view.$this->viewSuffix;
         }
         if (!file_exists($fileName)) {
-            throw new Exception("tpl:{$fileName} not exist!");
+            throw new \Exception("tpl:{$fileName} not exist!");
             return false;
         }
 
@@ -146,7 +150,7 @@ abstract class Base
         
         //加载布局
         if (!empty($this->layout)) {
-            $fileName = ROOT_PATH.DIRECTORY_SEPARATOR.'layouts';
+            $fileName = APP_PATH.DIRECTORY_SEPARATOR.'layouts';
             if (!empty($this->theme)) {
                 $fileName .= DIRECTORY_SEPARATOR.$this->theme;
             }
