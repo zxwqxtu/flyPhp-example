@@ -5,7 +5,8 @@
  */
 return array(
     'app' => array(
-        'be.zxwqxtu.cc' => 'blog',
+        'blog.fly.zxwqxtu.cc' => 'blog',
+        'crm.fly.zxwqxtu.cc' => 'crm',
     ),
     'timezone' => 'Asia/Shanghai',
     'debug' => true,

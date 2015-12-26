@@ -1,0 +1,3 @@
+[submodule "flyPHP"]
+	path = flyPHP
+	url = git@github.com:zxwqxtu/flyPHP.git
