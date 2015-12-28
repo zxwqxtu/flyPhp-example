@@ -4,9 +4,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta http-equiv="content-type" content="text/html;charset=utf-8">
         <title>搜索</title>
-        <link rel="stylesheet" type="text/css" href="<?php echo Libs\Common::getConfig('cssHost');?>/css/baidu.css"></link>
+        <link rel="stylesheet" type="text/css" href="<?php echo Libs\Common::getConfig('cssHost');?>/baidu.css"></link>
         <script type="text/javascript" src="https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/jquery/jquery-1.10.2.min_f2fb5194.js"></script>
-        <script type='text/javascript' src="<?php echo Libs\Common::getConfig('cssHost');?>/js/baidu-header.js"></script>
+        <script type='text/javascript' src="<?php echo Libs\Common::getConfig('cssHost');?>/baidu-header.js"></script>
     </head>
     <body>
         <div class="wrapper_l" id="wrapper">
