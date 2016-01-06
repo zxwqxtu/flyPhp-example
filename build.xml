@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<project name="flyphp" default="build" basedir=".">
+    <description>
+        Build for flyphp 
+    </description>
+
+    <property name="phpdoc" location="vendor/bin/phpdoc"/>
+    <property name="framework" location="flyPHP"/>
+    <property name="framework-docs" location="flyPHP/docs"/>
+
+    <target name="build" depends="phpdoc, clean-phpdoc-cache">
+    </target>
+
+    <target name="phpdoc">
+        <echo message="The base dir is: ${basedir}" />
+        <exec executable="${phpdoc}" dir="${basedir}" failonerror="true" >
+            <arg line="-d ${framework} -t ${framework-docs}" />
+        </exec>
+    </target>
+
+    <target name="clean-phpdoc-cache">
+        <delete verbose="true">
+            <fileset  includes="phpdoc-cache*" dir="${framework-docs}"/>
+        </delete>
+    </target>
+
+</project>
