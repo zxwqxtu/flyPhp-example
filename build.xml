@@ -11,17 +11,27 @@
     <target name="build" depends="phpdoc, clean-phpdoc-cache">
     </target>
 
-    <target name="phpdoc">
+    <target name="install-phpdoc">
+        <exec executable="composer" dir="${basedir}">
+            <arg line="update phpdocumentor/phpdocumentor"/>
+        </exec>
+    </target>
+
+    <target name="install-framework">
+        <exec executable="composer" dir="${basedir}">
+            <arg line="create-project zxwqxtu/flyphp ${framework} dev-master"/>
+        </exec>
+    </target>
+
+    <target name="phpdoc" depends="install-phpdoc">
         <echo message="The base dir is: ${basedir}" />
         <exec executable="${phpdoc}" dir="${basedir}" failonerror="true" >
-            <arg line="-d ${framework} -t ${framework-docs}" />
+            <arg line="-d ${framework} -t ${framework-docs} --cache-folder=${framework-docs}/cache" />
         </exec>
     </target>
 
     <target name="clean-phpdoc-cache">
-        <delete verbose="true">
-            <fileset  includes="phpdoc-cache*" dir="${framework-docs}"/>
-        </delete>
+        <delete verbose="true" includeemptydirs="true" dir="${framework-docs}/cache" />
     </target>
 
 </project>
