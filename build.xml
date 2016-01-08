@@ -4,10 +4,11 @@
         Build for flyphp 
     </description>
 
-    <property name="phpdoc" location="vendor/bin/phpdoc"/>
     <property name="framework" location="flyPHP"/>
     <property name="framework-docs" location="flyPHP/docs"/>
     <property name="composer" location="composer.phar"/>
+    <property name="phpdoc" location="vendor/bin/phpdoc"/>
+    <property name="phpunit" location="vendor/bin/phpunit"/>
 
     <target name="build" depends="install-composer, install-framework, phpdoc, clean-phpdoc-cache">
     </target>
@@ -22,6 +23,21 @@
             <arg line="config repo.packagist composer http://packagist.phpcomposer.com"/>
         </exec>
     </target>
+
+    <target name="install-phpunit">
+        <exec executable="${composer}" dir="${basedir}">
+            <arg value="require"/>
+            <arg value="phpunit/phpunit=5.1.*"/>
+        </exec>
+    </target>
+
+    <target name="phpunit-framework" depends="install-phpunit">
+        <echo message="The phpunit dir is: ${framework}/tests" />
+        <exec executable="${phpunit}" dir="${basedir}" failonerror="true" >
+            <arg line="-c ${framework}/tests/phpunit.xml" />
+        </exec>
+    </target>
+    <target name="test" depends="phpunit-framework"/>
 
     <target name="install-phpdoc">
         <exec executable="${composer}" dir="${basedir}">
