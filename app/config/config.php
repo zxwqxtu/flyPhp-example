@@ -16,7 +16,7 @@ return array(
     'indexController' => 'Test',
     'importClassPath' => array(),
     'require' => array(
-    #   'vendor/autoload.php'
+        'config/config.php'
     ),
     'cssHost' => 'http://css.static.zxwqxtu.cc',
     'imageHost' => 'http://image.static.zxwqxtu.cc',

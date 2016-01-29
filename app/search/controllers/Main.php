@@ -13,6 +13,7 @@ class Main extends Base
 
     public function index()
     {
-
+        $this->view = 'Main/index';        
+        return true;
     }
 }
