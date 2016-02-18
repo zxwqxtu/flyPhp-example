@@ -1,7 +1,7 @@
 <?php
-namespace Controllers;
+namespace App\Controllers;
 
-use Controllers\Base;
+use FlyPhp\Controllers\Base;
 
 class Main extends Base
 {
