@@ -19,13 +19,10 @@ class Test extends Base
 
     public function show()
     {
-        $this->response = array(
+        $this->view = 'Test/show';
+
+        return array(
             'data' => 'show me', 
         );
-    }
-
-    public function hello()
-    {
-        $this->view = 'Test/index';
     }
 }
