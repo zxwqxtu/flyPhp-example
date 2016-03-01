@@ -14,7 +14,6 @@ return array(
     'errorLog' => '',
     'charset' => 'UTF-8',
     'indexController' => 'Test',
-    'importClassPath' => array(),
     'require' => array(
         'config/config.php'
     ),

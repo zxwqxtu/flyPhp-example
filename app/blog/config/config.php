@@ -12,7 +12,6 @@ return array(
     'errorLog' => '',
     'charset' => 'UTF-8',
     'indexController' => 'Info',
-    'importClassPath' => array(),
     'require' => array(
     #   'vendor/autoload.php'
     )
