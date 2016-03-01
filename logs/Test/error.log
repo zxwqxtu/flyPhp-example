@@ -1,0 +1,5 @@
+[25-Dec-2015 18:24:02 Asia/Shanghai] PHP Fatal error:  Uncaught exception 'Exception' with message 'controller:index not exists!' in /www/web/new/bePhp/boot/Init.php:97
+Stack trace:
+#0 /www/web/new/bePhp/index.php(16): Boot\Init->start()
+#1 {main}
+  thrown in /www/web/new/bePhp/boot/Init.php on line 97

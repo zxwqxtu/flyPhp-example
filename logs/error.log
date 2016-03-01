@@ -1,0 +1,76 @@
+[25-Dec-2015 17:59:40 Asia/Shanghai] PHP Warning:  require_once(/www/web/new/controllers/.php): failed to open stream: No such file or directory in /www/web/new/bePhp/libs/AutoLoader.php on line 58
+[25-Dec-2015 17:59:40 Asia/Shanghai] PHP Fatal error:  require_once(): Failed opening required '/www/web/new/controllers/.php' (include_path='.:/www/php/lib/php') in /www/web/new/bePhp/libs/AutoLoader.php on line 58
+[25-Dec-2015 18:08:07 Asia/Shanghai] PHP Warning:  require_once(/www/web/new/controllers/.php): failed to open stream: No such file or directory in /www/web/new/bePhp/libs/AutoLoader.php on line 58
+[25-Dec-2015 18:08:07 Asia/Shanghai] PHP Fatal error:  require_once(): Failed opening required '/www/web/new/controllers/.php' (include_path='.:/www/php/lib/php') in /www/web/new/bePhp/libs/AutoLoader.php on line 58
+[25-Dec-2015 18:08:48 Asia/Shanghai] PHP Warning:  require_once(/www/web/new/controllers/.php): failed to open stream: No such file or directory in /www/web/new/bePhp/libs/AutoLoader.php on line 58
+[25-Dec-2015 18:08:48 Asia/Shanghai] PHP Fatal error:  require_once(): Failed opening required '/www/web/new/controllers/.php' (include_path='.:/www/php/lib/php') in /www/web/new/bePhp/libs/AutoLoader.php on line 58
+[25-Dec-2015 18:17:22 Asia/Shanghai] PHP Fatal error:  Uncaught exception 'Exception' with message 'controller: not exists!' in /www/web/new/bePhp/boot/Init.php:97
+Stack trace:
+#0 /www/web/new/bePhp/index.php(16): Boot\Init->start()
+#1 {main}
+  thrown in /www/web/new/bePhp/boot/Init.php on line 97
+[25-Dec-2015 18:17:29 Asia/Shanghai] PHP Fatal error:  Uncaught exception 'Exception' with message 'controller:kk not exists!' in /www/web/new/bePhp/boot/Init.php:97
+Stack trace:
+#0 /www/web/new/bePhp/index.php(16): Boot\Init->start()
+#1 {main}
+  thrown in /www/web/new/bePhp/boot/Init.php on line 97
+[25-Dec-2015 18:17:33 Asia/Shanghai] PHP Fatal error:  Uncaught exception 'Exception' with message 'controller: not exists!' in /www/web/new/bePhp/boot/Init.php:97
+Stack trace:
+#0 /www/web/new/bePhp/index.php(16): Boot\Init->start()
+#1 {main}
+  thrown in /www/web/new/bePhp/boot/Init.php on line 97
+[25-Dec-2015 18:17:38 Asia/Shanghai] PHP Fatal error:  Uncaught exception 'Exception' with message 'controller:kk not exists!' in /www/web/new/bePhp/boot/Init.php:97
+Stack trace:
+#0 /www/web/new/bePhp/index.php(16): Boot\Init->start()
+#1 {main}
+  thrown in /www/web/new/bePhp/boot/Init.php on line 97
+[25-Dec-2015 18:17:43 Asia/Shanghai] PHP Fatal error:  Uncaught exception 'Exception' with message 'controller: not exists!' in /www/web/new/bePhp/boot/Init.php:97
+Stack trace:
+#0 /www/web/new/bePhp/index.php(16): Boot\Init->start()
+#1 {main}
+  thrown in /www/web/new/bePhp/boot/Init.php on line 97
+[01-Mar-2016 10:17:22 Asia/Shanghai] PHP Fatal error:  Uncaught exception 'Exception' with message 'controller: not exists!' in /www/web/new/flyPHP/boot/Init.php:126
+Stack trace:
+#0 /www/web/new/flyPHP/index.php(16): FlyPhp\Boot\Init->start()
+#1 {main}
+  thrown in /www/web/new/flyPHP/boot/Init.php on line 126
+[01-Mar-2016 10:19:33 Asia/Shanghai] PHP Fatal error:  Uncaught exception 'Exception' with message 'controller:main not exists!' in /www/web/new/flyPHP/boot/Init.php:126
+Stack trace:
+#0 /www/web/new/flyPHP/index.php(16): FlyPhp\Boot\Init->start()
+#1 {main}
+  thrown in /www/web/new/flyPHP/boot/Init.php on line 126
+[01-Mar-2016 10:22:49 Asia/Shanghai] PHP Fatal error:  Uncaught exception 'Exception' with message 'controller:main not exists!' in /www/web/new/flyPHP/boot/Init.php:126
+Stack trace:
+#0 /www/web/new/flyPHP/index.php(16): FlyPhp\Boot\Init->start()
+#1 {main}
+  thrown in /www/web/new/flyPHP/boot/Init.php on line 126
+[01-Mar-2016 10:22:50 Asia/Shanghai] PHP Fatal error:  Uncaught exception 'Exception' with message 'controller:main not exists!' in /www/web/new/flyPHP/boot/Init.php:126
+Stack trace:
+#0 /www/web/new/flyPHP/index.php(16): FlyPhp\Boot\Init->start()
+#1 {main}
+  thrown in /www/web/new/flyPHP/boot/Init.php on line 126
+[01-Mar-2016 10:23:38 Asia/Shanghai] PHP Fatal error:  Uncaught exception 'Exception' with message 'controller:main not exists!' in /www/web/new/flyPHP/boot/Init.php:126
+Stack trace:
+#0 /www/web/new/flyPHP/index.php(16): FlyPhp\Boot\Init->start()
+#1 {main}
+  thrown in /www/web/new/flyPHP/boot/Init.php on line 126
+[01-Mar-2016 10:23:39 Asia/Shanghai] PHP Fatal error:  Uncaught exception 'Exception' with message 'controller:main not exists!' in /www/web/new/flyPHP/boot/Init.php:126
+Stack trace:
+#0 /www/web/new/flyPHP/index.php(16): FlyPhp\Boot\Init->start()
+#1 {main}
+  thrown in /www/web/new/flyPHP/boot/Init.php on line 126
+[01-Mar-2016 10:24:09 Asia/Shanghai] PHP Fatal error:  Uncaught exception 'Exception' with message 'controller: not exists!' in /www/web/new/flyPHP/boot/Init.php:126
+Stack trace:
+#0 /www/web/new/flyPHP/index.php(16): FlyPhp\Boot\Init->start()
+#1 {main}
+  thrown in /www/web/new/flyPHP/boot/Init.php on line 126
+[01-Mar-2016 10:24:18 Asia/Shanghai] PHP Fatal error:  Uncaught exception 'Exception' with message 'controller:main not exists!' in /www/web/new/flyPHP/boot/Init.php:126
+Stack trace:
+#0 /www/web/new/flyPHP/index.php(16): FlyPhp\Boot\Init->start()
+#1 {main}
+  thrown in /www/web/new/flyPHP/boot/Init.php on line 126
+[01-Mar-2016 10:26:09 Asia/Shanghai] PHP Fatal error:  Uncaught exception 'Exception' with message 'controller:main not exists!' in /www/web/new/flyPHP/boot/Init.php:126
+Stack trace:
+#0 /www/web/new/flyPHP/index.php(16): FlyPhp\Boot\Init->start()
+#1 {main}
+  thrown in /www/web/new/flyPHP/boot/Init.php on line 126

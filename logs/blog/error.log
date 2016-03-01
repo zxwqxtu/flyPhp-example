@@ -1,0 +1,60 @@
+[25-Dec-2015 17:39:22 Asia/Shanghai] PHP Warning:  require_once(/www/web/new/app/blog/vendor/autoload.php): failed to open stream: No such file or directory in /www/web/new/bePhp/boot/Init.php on line 78
+[25-Dec-2015 17:39:22 Asia/Shanghai] PHP Fatal error:  require_once(): Failed opening required '/www/web/new/app/blog/vendor/autoload.php' (include_path='.:/www/php/lib/php') in /www/web/new/bePhp/boot/Init.php on line 78
+[25-Dec-2015 17:42:09 Asia/Shanghai] PHP Warning:  require_once(/www/web/new/controllers/Kkk.php): failed to open stream: No such file or directory in /www/web/new/bePhp/libs/AutoLoader.php on line 58
+[25-Dec-2015 17:42:09 Asia/Shanghai] PHP Fatal error:  require_once(): Failed opening required '/www/web/new/controllers/Kkk.php' (include_path='.:/www/php/lib/php') in /www/web/new/bePhp/libs/AutoLoader.php on line 58
+[25-Dec-2015 17:43:27 Asia/Shanghai] PHP Warning:  require_once(/www/web/new/controllers/.php): failed to open stream: No such file or directory in /www/web/new/bePhp/libs/AutoLoader.php on line 58
+[25-Dec-2015 17:43:27 Asia/Shanghai] PHP Fatal error:  require_once(): Failed opening required '/www/web/new/controllers/.php' (include_path='.:/www/php/lib/php') in /www/web/new/bePhp/libs/AutoLoader.php on line 58
+[25-Dec-2015 17:44:48 Asia/Shanghai] PHP Warning:  require_once(/www/web/new/controllers/.php): failed to open stream: No such file or directory in /www/web/new/bePhp/libs/AutoLoader.php on line 58
+[25-Dec-2015 17:44:48 Asia/Shanghai] PHP Fatal error:  require_once(): Failed opening required '/www/web/new/controllers/.php' (include_path='.:/www/php/lib/php') in /www/web/new/bePhp/libs/AutoLoader.php on line 58
+[25-Dec-2015 17:47:25 Asia/Shanghai] PHP Warning:  require_once(/www/web/new/controllers/.php): failed to open stream: No such file or directory in /www/web/new/bePhp/libs/AutoLoader.php on line 58
+[25-Dec-2015 17:47:25 Asia/Shanghai] PHP Fatal error:  require_once(): Failed opening required '/www/web/new/controllers/.php' (include_path='.:/www/php/lib/php') in /www/web/new/bePhp/libs/AutoLoader.php on line 58
+[25-Dec-2015 18:10:07 Asia/Shanghai] PHP Warning:  require_once(/www/web/new/controllers/Kkk.php): failed to open stream: No such file or directory in /www/web/new/bePhp/libs/AutoLoader.php on line 58
+[25-Dec-2015 18:10:07 Asia/Shanghai] PHP Fatal error:  require_once(): Failed opening required '/www/web/new/controllers/Kkk.php' (include_path='.:/www/php/lib/php') in /www/web/new/bePhp/libs/AutoLoader.php on line 58
+[25-Dec-2015 18:12:30 Asia/Shanghai] PHP Fatal error:  Uncaught exception 'Exception' with message 'controller:kkk not exists!' in /www/web/new/bePhp/boot/Init.php:97
+Stack trace:
+#0 /www/web/new/bePhp/index.php(16): Boot\Init->start()
+#1 {main}
+  thrown in /www/web/new/bePhp/boot/Init.php on line 97
+[25-Dec-2015 18:24:13 Asia/Shanghai] PHP Fatal error:  Uncaught exception 'Exception' with message 'controller:Test not exists!' in /www/web/new/bePhp/boot/Init.php:97
+Stack trace:
+#0 /www/web/new/bePhp/index.php(16): Boot\Init->start()
+#1 {main}
+  thrown in /www/web/new/bePhp/boot/Init.php on line 97
+[25-Dec-2015 18:34:26 Asia/Shanghai] PHP Fatal error:  Class 'Controllers\Base' not found in /www/web/new/app/blog/controllers/Test.php on line 6
+[25-Dec-2015 18:34:39 Asia/Shanghai] PHP Fatal error:  Class 'Controllers\Base' not found in /www/web/new/app/blog/controllers/Test.php on line 6
+[25-Dec-2015 18:36:17 Asia/Shanghai] PHP Fatal error:  Uncaught exception 'Exception' with message 'controller:test action:kk not exists!' in /www/web/new/bePhp/boot/Init.php:105
+Stack trace:
+#0 /www/web/new/bePhp/index.php(16): Boot\Init->start()
+#1 {main}
+  thrown in /www/web/new/bePhp/boot/Init.php on line 105
+[25-Dec-2015 18:38:22 Asia/Shanghai] PHP Fatal error:  Uncaught exception 'Exception' with message 'controller:test action:indexk not exists!' in /www/web/new/bePhp/boot/Init.php:105
+Stack trace:
+#0 /www/web/new/bePhp/index.php(16): Boot\Init->start()
+#1 {main}
+  thrown in /www/web/new/bePhp/boot/Init.php on line 105
+[04-Jan-2016 10:27:51 Asia/Shanghai] PHP Notice:  date_default_timezone_set(): Timezone ID '' is invalid in /www/web/new/flyPHP/boot/Init.php on line 75
+[04-Jan-2016 10:30:08 Asia/Shanghai] PHP Notice:  date_default_timezone_set(): Timezone ID '' is invalid in /www/web/new/flyPHP/boot/Init.php on line 75
+[04-Jan-2016 10:41:23 Asia/Shanghai] PHP Notice:  date_default_timezone_set(): Timezone ID '' is invalid in /www/web/new/flyPHP/boot/Init.php on line 75
+[04-Jan-2016 10:46:21 Asia/Shanghai] PHP Notice:  date_default_timezone_set(): Timezone ID '' is invalid in /www/web/new/flyPHP/boot/Init.php on line 75
+[04-Jan-2016 14:29:23 Asia/Shanghai] PHP Fatal error:  Uncaught exception 'Exception' with message 'controller:test action:mainx not exists!' in /www/web/new/flyPHP/boot/Init.php:111
+Stack trace:
+#0 /www/web/new/flyPHP/index.php(16): Boot\Init->start()
+#1 {main}
+  thrown in /www/web/new/flyPHP/boot/Init.php on line 111
+[06-Jan-2016 17:26:41 Asia/Shanghai] PHP Warning:  Cannot modify header information - headers already sent by (output started at /www/web/new/flyPHP/core/Config.php:115) in /www/web/new/flyPHP/controllers/Base.php on line 118
+[06-Jan-2016 17:30:12 Asia/Shanghai] PHP Warning:  Cannot modify header information - headers already sent by (output started at /www/web/new/flyPHP/boot/Init.php:104) in /www/web/new/flyPHP/controllers/Base.php on line 118
+[06-Jan-2016 17:33:09 Asia/Shanghai] PHP Warning:  Cannot modify header information - headers already sent by (output started at /www/web/new/flyPHP/boot/Init.php:104) in /www/web/new/flyPHP/controllers/Base.php on line 118
+[06-Jan-2016 17:33:20 Asia/Shanghai] PHP Warning:  Cannot modify header information - headers already sent by (output started at /www/web/new/flyPHP/boot/Init.php:103) in /www/web/new/flyPHP/controllers/Base.php on line 118
+[06-Jan-2016 17:33:32 Asia/Shanghai] PHP Warning:  Cannot modify header information - headers already sent by (output started at /www/web/new/flyPHP/boot/Init.php:103) in /www/web/new/flyPHP/controllers/Base.php on line 118
+[14-Jan-2016 15:27:23 Asia/Shanghai] PHP Fatal error:  Class 'Response\Render' not found in /www/web/new/flyPHP/boot/Init.php on line 142
+[14-Jan-2016 15:28:09 Asia/Shanghai] PHP Parse error:  syntax error, unexpected ')' in /www/web/new/flyPHP/response/Render.php on line 105
+[18-Feb-2016 16:47:51 Asia/Shanghai] PHP Fatal error:  Uncaught exception 'Exception' with message 'controller:Info not exists!' in /www/web/new/flyPHP/boot/Init.php:126
+Stack trace:
+#0 /www/web/new/flyPHP/index.php(16): FlyPhp\Boot\Init->start()
+#1 {main}
+  thrown in /www/web/new/flyPHP/boot/Init.php on line 126
+[01-Mar-2016 10:33:27 Asia/Shanghai] PHP Fatal error:  Uncaught exception 'Exception' with message 'controller:Info not exists!' in /www/web/new/flyPHP/boot/Init.php:126
+Stack trace:
+#0 /www/web/new/flyPHP/index.php(16): FlyPhp\Boot\Init->start()
+#1 {main}
+  thrown in /www/web/new/flyPHP/boot/Init.php on line 126

@@ -1,0 +1,15 @@
+[04-Jan-2016 10:48:23 Asia/Shanghai] PHP Fatal error:  Uncaught exception 'Exception' with message 'controller:Test not exists!' in /www/web/new/flyPHP/boot/Init.php:100
+Stack trace:
+#0 /www/web/new/flyPHP/index.php(16): Boot\Init->start()
+#1 {main}
+  thrown in /www/web/new/flyPHP/boot/Init.php on line 100
+[04-Jan-2016 14:26:29 Asia/Shanghai] PHP Fatal error:  Uncaught exception 'Exception' with message 'controller:Test not exists!' in /www/web/new/flyPHP/boot/Init.php:103
+Stack trace:
+#0 /www/web/new/flyPHP/index.php(16): Boot\Init->start()
+#1 {main}
+  thrown in /www/web/new/flyPHP/boot/Init.php on line 103
+[04-Jan-2016 16:11:58 Asia/Shanghai] PHP Fatal error:  Uncaught exception 'Exception' with message 'controller:main not exists!' in /www/web/new/flyPHP/boot/Init.php:103
+Stack trace:
+#0 /www/web/new/flyPHP/index.php(16): Boot\Init->start()
+#1 {main}
+  thrown in /www/web/new/flyPHP/boot/Init.php on line 103

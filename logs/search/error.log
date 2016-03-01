@@ -1,0 +1,15 @@
+[15-Jan-2016 17:22:00 Asia/Shanghai] PHP Notice:  Undefined variable: action in /www/web/new/flyPHP/controllers/Base.php on line 126
+[15-Jan-2016 17:22:00 Asia/Shanghai] PHP Fatal error:  Uncaught exception 'Exception' with message 'tpl:/www/web/new/app/search/views/Main/.php not exist!' in /www/web/new/flyPHP/controllers/Base.php:131
+Stack trace:
+#0 /www/web/new/flyPHP/boot/Init.php(146): Controllers\Base->getViewFile()
+#1 /www/web/new/flyPHP/index.php(16): Boot\Init->start()
+#2 {main}
+  thrown in /www/web/new/flyPHP/controllers/Base.php on line 131
+[15-Jan-2016 17:26:00 Asia/Shanghai] PHP Fatal error:  Class 'Libs\Common' not found in /www/web/new/app/search/layouts/index.php on line 7
+[15-Jan-2016 17:55:06 Asia/Shanghai] PHP Fatal error:  Class 'Libs\Common' not found in /www/web/new/app/search/layouts/index.php on line 7
+[15-Jan-2016 17:55:18 Asia/Shanghai] PHP Fatal error:  Class 'Libs\Common' not found in /www/web/new/app/search/layouts/index.php on line 7
+[15-Jan-2016 17:55:18 Asia/Shanghai] PHP Fatal error:  Class 'Libs\Common' not found in /www/web/new/app/search/layouts/index.php on line 7
+[15-Jan-2016 17:55:18 Asia/Shanghai] PHP Fatal error:  Class 'Libs\Common' not found in /www/web/new/app/search/layouts/index.php on line 7
+[15-Jan-2016 17:55:19 Asia/Shanghai] PHP Fatal error:  Class 'Libs\Common' not found in /www/web/new/app/search/layouts/index.php on line 7
+[15-Jan-2016 17:55:19 Asia/Shanghai] PHP Fatal error:  Class 'Libs\Common' not found in /www/web/new/app/search/layouts/index.php on line 7
+[15-Jan-2016 17:56:03 Asia/Shanghai] PHP Fatal error:  Class 'Libs\Common' not found in /www/web/new/app/search/layouts/index.php on line 7
