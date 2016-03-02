@@ -55,7 +55,7 @@
     <target name="phpdoc" depends="install-phpdoc">
         <echo message="The base dir is: ${basedir}" />
         <exec executable="${phpdoc}" dir="${basedir}" failonerror="true" >
-            <arg line="-d ${framework} -t ${framework-docs} --cache-folder=${framework-docs}/cache" />
+            <arg line="-d ${framework}/src -t ${framework-docs} --cache-folder=${framework-docs}/cache" />
         </exec>
     </target>
 
