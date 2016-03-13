@@ -15,13 +15,17 @@ class Test extends Base
 
     public function index()
     {
+        $this->request->post('k', 'string', 'kkkk');
+        $this->request->server('USER', 'string', 'vvv');
         return 'Hello, World!';
     }
 
     public function show()
     {
         $this->view = 'Test/show';
-
+        session_start();
+        $this->request->session('USER', 'string', 'vvv');
+        
         return array(
             'data' => 'show me', 
         );
